@@ -1,2 +1,2 @@
-# burger
-Burger app
+# Burger App
+App for eating burgers :)

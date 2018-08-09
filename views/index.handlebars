@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1 class="mt-3">Burger app:</h1>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>Available Burgers:</h2>
+      <div class="content" id="available">
+        <ul>
+          {{#each burgers}} {{#unless devoured}}
+          <li>
+            <div class="burgerItem">
+              <p>{{burger_name}}</p>
+              <button class="btn burgerEat">Eat!</button>
+            </div>
+          </li>
+          {{/unless}} {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <h2>Eaten Burgers:</h2>
+      <div class="content" id="eaten">
+        <ul>
+          {{#each burgers}} {{#if devoured}}
+          <li>
+            <div class="burgerItem">
+              {{burger_name}}
+            </div>
+          </li>
+          {{/if}} {{/each}}
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="row">
+    <div class="col-12">
+      <div class="" id="form_div">
+        <h2>Add a Burger</h2>
+        <form class="create-form">
+
+          <div class="form-group">
+            <label>Type in the burger name:</label>
+            <br>
+            <input type="text" name="burgerName">
+          </div>
+          <input id="burgerSubmit" class="btn btn-primary" type="submit" value="Add Burger"></input>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
