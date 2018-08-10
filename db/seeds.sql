@@ -1,4 +1,4 @@
-use burgers_db;
+use heroku_40abc4b1b3910e3;
 
 INSERT INTO burgers(burger_name, devoured)
 VALUES ("Western Bacon Cheeseburger", false);
